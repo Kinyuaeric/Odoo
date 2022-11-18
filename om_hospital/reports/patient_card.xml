@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <template id="report_patient">
         <t t-call="web.html_container"/>
             <t t-foreach="docs" t-as="o">
@@ -50,8 +49,6 @@
                     </center>  
                 </div>
             </div>
-                
-
         </t>
         </template>
 </odoo>

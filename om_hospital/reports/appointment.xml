@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
-
 <!--tree view of appointment form-->
-    
   <record id="Appointment_tree" model="ir.ui.view">
       <field name="name">hospital.appointment.tree</field>
       <field name="model">hospital.appointment</field>
@@ -16,9 +13,7 @@
         </tree>
       </field>
    </record>
-
   <!--form view of appointment view-->
-  
     <record id="Appointment_form" model="ir.ui.view">
       <field name="name">hospital.appointment.form</field>
       <field name="model">hospital.appointment</field>
@@ -36,10 +31,7 @@
             <group>
               <field name="patient_id" options="{'no_create':True,'no_create_edit':True,'no_open':True}"/>
               <field name="patient_age"/> 
-            
             </group>
-            
-
             <group>
               <field name="appointment_date"></field>
             </group>
@@ -60,7 +52,6 @@
         </form>
       </field>
     </record>
-
   <!--action of the appointmentt menu-->
       <record id="action_appointment" model="ir.actions.act_window">
             <field name="name">Appointments</field>
@@ -75,16 +66,6 @@
                           </p>
             </field>
         </record>
-       <!-- <menuitem id="hospital_appointment"  parent="hospital_root" 
-                sequence="2" action="action_appointment"/>-->
-        
-        <!--menuitem id="hospital_root" name="Hospital" sequence="0" web_icon="om_hospital,static/description/icon.png"/>-->
-        <!--<menuitem id="hospital_appointment" name="Appointments" parent="hospital_root" action="action_appointment"/>-->
-
-
-
       <menuitem id="hospital_appointment" name="Appointments" sequence="2" />
       <menuitem id="hospital_appointment" name="Appointments" parent="hospital_root" action="action_appointment"/>
-
-   
 </odoo>
